@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1:hover {
+    color: red;
+}
+
+h2, h3 {
+    color: #B05B3B;
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #B05B3B;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*membuat ukuran font pada teks elemen <a> yang merupakan turunan elemwn <nav>*/
+nav a {
+    font-size: 18px;
+    /*ketebalan teks*/
+    font-weight: 400;
+    text-decoration: none;
+    /*warna text*/
+    color: white;
+}
+
+/*membuat  efek tebal pada teks saat kursor diarahkan dengan pseudo-class :hover*/
+nav a:hover {
+    font-weight: bold;
+}
+
+
+/*menerapkan card style pada element <article> dengan menerapkan box-shadow
+dan border-radius*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px ;
+}
+
+
+/*menerapkan jumbotron dan Navigasi pada header*/
+/*selector class="jumbotron" pada elemen div agar elemen <nav> tidak terpengaruhi*/
+
+.jumbotron {
+    font-size: 20px;
+    padding: 10px 10px 0px 10px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.title-raisa {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 150px;
+    padding-left: 50px;
+}
+
+.profile-header {
+    height: 100%;
+    max-height: 300px;
+    
+}
+
+/*menerapkan tampilan in line pada elemen <ul> yang terletak pada header*/
+nav li {
+    display: inline;
+    margin-right: 20px;
+    /*menghilangkan tanda titik pada tiap item list*/
+    list-style-type: none;
+}
+
+/*mengubah background color dan warna text pada elemen navigasi header*/
+nav {
+    background-color: #B05B3B;
+    padding: 5px;
+
+    /*membuat sticky (kombinasi fixed dan relative positioning) navigation yaitu posisi navigasi tetap terlihat meskipun user melakukan scrol ke atas atau ke bawah*/
+    position: sticky;
+    top: 0;
+}
+
+/*membuat konten dalam elemen main lebih berjarak antara header dan foter dan kanan kiri agar lebih nyaman dilihat dan dibaca*/
+main {
+    padding: 20px;
+}
+
+
+main {
+    padding: 20px;
+    /*membuat float menjadi rapi dengan overflow*/
+    overflow: auto;
+}
+
+/*menerapkan nilai border-box pada properti box-sizing,
+kita dapat menentukan dimensi kotak dengan tepat, tanpa dipengaruhi oleh padding dan border*/
+* {
+    box-sizing: border-box;
+}
+
+/*membuat tampilan layout lebih responsive, 
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 1000px */
+@media screen and (max-width: 1000px) {
+    /*buat elemen <aside> dan #content memiliki lebar 100% pada layar yang memiliki lebar viewport maksimal 1000px (nilainya dapat disesuaikan sesuai kebutuhan)*/
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+@media screen and (max-width: 600px) {
+
+}
+
+/*agar navigasi dapat menempel pada seluruh halaman? Buat elemen <header> sebagai induk dari elemen <nav> yang menerapkan properti display dengan nilai inline*/
+header {
+    display: inline;
+}
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .band {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  
+  .cardd {
+    background: #e8e4e3;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    top: 0;
+    transition: all .1s ease-in;
+  }
+  
+  .cardd:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  .img-list img {
+    width: 100px;
+}
+  
+
