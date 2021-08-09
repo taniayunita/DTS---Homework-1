@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DTS First Home Work </title>
+        <!--membuat tampilan website lebih responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!--menghubungkan berkas css dan HTML-->
+        <link rel="stylesheet" href="assets/aset.css">
+        <style>
+         
+    
+    
+        </style>
+    </head>
+
+    <body>
+
+        <!--Elemen 1 pada body yaitu HEADER-->
+        <header>
+           
+            <!--Membuat List secara Unordered-->
+            <!--Membuat list menjadi sebuah navigasi
+            dengan menambah elemen Nav-->
+            <nav>
+                <ul>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#listen-me">Listen me</a></li>
+                </ul>
+            </nav>
+            
+            <div class="jumbotron">
+                <h3>Hello! I am <br><span class="title-raisa">Raisa</span></h3>
+                <img src="images/raisa.png" alt="raisa" class="head-profile">
+            </div>
+        </header>
+
+        <!--ELemen 2 pada body yaitu MAIN berisi konten-kontennya-->
+        <main>
+            <!--membuat generic elemen pada main menggunakan <div>
+            dan semantic elemen lainnya seperti <aside>, <article>, dan <section> dalam mengelompokkan elemennya-->
+            
+            <!--Elemen 1 pada main yaitu DIV-->
+            <div id="content">
+                <!--di dalam elemen <div> terdapat konten yang dapat digolongkan sebagai artikel (sejarah,geografis,wisata).
+                    Dengan hasil identifikasi tersebut, maka kita memerlukan tiga buah elemen <article> 
+                    untuk mengelompokkan masing-masing konten yang terkait. Masing-masing elemen <article> akan terdiri dari heading, gambar dan paragraf-->
+                
+                <!--Elemen Article Ke-1 pada Elemen <div>-->
+                <article id="biography" class="card">
+                    <h2 >Biography</h2>
+                    <p>Raisa Andriana, better known by her mononym Raisa (born in Jakarta on 6 June 1990), is an Indonesian singer and songwriter. She became publicly known for her song titled "Serba Salah".Prior to her solo career, she was one of the lead vocalist of Kevin Aprilio's band, Andante, which later renamed as Vierra (now Vierratale).</p>
+                    <p>Raisa has received a number of accolades, including Indonesian Music Awards, Music Planet Awards, and Mnet Asian Music Awards. In 2014, she was charted at 45th place on Billboard Uncharted,marking her first time to enter the Billboard chart. Later in 2017, she reached 29th place on Billboard Social 50,a chart which ranks the most active musical artists on the world's leading social networking services.</p>
+                </article>
+
+                <!--Elemen Article Ke-2 pada Elemen <div>-->
+                <article id="music" class="card">
+                    <h2 >Music</h2>
+                    <section>
+                    
+                        <h3>Albums</h3>
+                        <div class="band">
+                            <div class="raisa cardd">
+                                <img src="images/albums-heart.JPG">
+                                <h2>Raisa</h2>
+                                <span>2011 ~ Album</span>
+                                    
+                            </div>
+                            <div class="heart cardd">
+                                <img src="images/albums-heart.JPG">
+                                <h2>Heart to Heart</h2>
+                                <span>2013 ~ Album</span>
+                            </div>
+                            <div class="its-personal cardd">
+                                <img src="images/albums-hanmade.JPG">
+                                <h2>Handmade</h2>
+                                <span>2016 ~ Album</span>
+                            </div>
+                            
+                    </section>
+
+                    <!--Elemen section ke-1 pada Elemen Article-->
+                    <section>
+                        <h3>Singles</h3>
+                        <div class="band">
+                            <div class="itpersonal cardd">
+                                <img src="images/single-personal.JPG">
+                                <h2>It's Personal</h2>
+                                <span>Latest Realease</span>
+                                    
+                            </div>
+                            <div class="tentang cardd">
+                                <img src="images/single-tentang-dirimu.JPG">
+                                <h2>Tentang Dirimu</h2>
+                                <span>2021 ~ Single</span>
+                            </div>
+                            <div class="kalbu cardd">
+                                <img src="images/single-bahasa-kalbu.JPG">
+                                <h2>Bahasa Kalbu</h2>
+                                <span>2020</span>
+                            </div>
+                            <div class="kutukan cardd">
+                                <img src="images/single-kutukan.JPG">
+                                <h2>Kutukan (Cinta Pertama)</h2>
+                                <span>2021</span>
+                            </div> 
+                        </section>
+                    </article>
+
+                <!--Elemen Article Ke-3 pada Elemen <div>-->
+                
+
+                <article id="listen-me" class="card">
+                    <h2 >Listen Me On</h2>   
+                    <div class="band">
+                        <div class="youtube img-list">
+                            <img src="images/youtube.png" alt="youtube">
+                            <h2>Youtube</h2>
+                                
+                        </div>
+                        <div class="spotify img-list" >
+                            <img src="images/spotify.png" alt="spotify">
+                            <h2>Spotify</h2>
+                        </div>
+                        <div class="joox img-list">
+                            <img src="images/joox.png">
+                            <h2>Joox</h2>
+                        </div> 
+                        <div class="apple-music img-list">
+                            <img src="images/apple.png" alt="apple music">
+                            <h2>Apple Music</h2>
+                        </div>
+                        
+                    </div> 
+                    
+                </article>
+                      
+            </div>
+
+    
+        </main>
+
+        <!--elemen 3 pada Body yaitu Footer-->
+        <footer>
+            
+            <p>Homework 1 HTML & CSS Mastery, &#169; 2021, Tania Yunita</p>
+         
+        </footer>
+    </body>
+</html>
